@@ -1,12 +1,10 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-var input = './src/scss/main.scss';
-var output = './dist/css';
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
-    return gulp.src(input)
+    return gulp.src('./src/scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
@@ -16,7 +14,7 @@ gulp.task('sass', function () {
             browsers: ['last 3 versions']
         }))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(output))
+        .pipe(gulp.dest('./dist/css'))
 });
 
 gulp.task('scripts', function() {
@@ -25,11 +23,10 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('copy-images', function () {
-    gulp
+    return gulp
         .src('./src/img/**/*')
-        // .pipe(imagemin())
         .pipe(gulp.dest('./dist/img'));
 });
 
 // Default task
-gulp.task('default', ['sass', 'scripts', 'copy-images']);
+gulp.task('default', gulp.parallel('sass', 'scripts', 'copy-images'));
