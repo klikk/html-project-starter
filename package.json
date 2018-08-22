@@ -1,0 +1,25 @@
+{
+  "name": "jdc",
+  "version": "1.0.0",
+  "description": "jdc sitebuild",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klikk/jdc"
+  },
+  "author": "Andras Klikk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klikk/jdc/issues"
+  },
+  "homepage": "https://github.com/klikk/jdc#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3"
+  }
+}
