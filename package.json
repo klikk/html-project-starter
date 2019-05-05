@@ -1,26 +1,37 @@
 {
-  "name": "jdc",
+  "name": "html-project-starter",
   "version": "1.0.0",
-  "description": "jdc sitebuild",
-  "main": "index.html",
+  "description": "HTML Starter Project",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/klikk/jdc"
+    "url": "git+https://github.com/klikk/html-project-starter.git"
   },
-  "author": "Andras Klikk",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/klikk/jdc/issues"
+    "url": "https://github.com/klikk/html-project-starter/issues"
   },
-  "homepage": "https://github.com/klikk/jdc#readme",
+  "homepage": "https://github.com/klikk/html-project-starter#readme",
   "dependencies": {
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-cli": "^2.0.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.3"
+    "autoprefixer": "9.4.3",
+    "cssnano": "4.1.7",
+    "del": "3.0.0",
+    "gulp": "4.0.0",
+    "gulp-imagemin": "5.0.3",
+    "gulp-newer": "1.4.0",
+    "gulp-noop": "1.0.0",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-size": "3.0.0",
+    "gulp-sourcemaps": "2.6.4",
+    "postcss-assets": "5.0.0",
+    "usedcss": "1.0.7"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.3"
   }
 }
